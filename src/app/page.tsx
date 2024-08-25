@@ -3,6 +3,7 @@ import { FlipTextDemo } from '@/components/example/fliptext';
 import {MarqueeDemo} from '@/components/example/marquee';
 import Ripple from '@/components/magicui/ripple';
 
+
 export default function Home() {
   return (
     <main >
