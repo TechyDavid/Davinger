@@ -10,10 +10,13 @@ export const FlipTextDemo = () => {
   const handleScroll = () => {
     if (textRef.current) {
       const rect = textRef.current.getBoundingClientRect();
-      const fadeStart = 100; // Adjust this value based on when you want the fade to start
-      const fadeEnd = 300; // Adjust this value to control how far the fade-out happens
-      
-      if (rect.top <= fadeEnd) {
+      const scrollY = window.scrollY;
+      const fadeStart = 100;
+      const fadeEnd = 300;
+
+      if (scrollY === 0) {
+        setOpacity(1); // Reset opacity when at the top of the page
+      } else if (rect.top <= fadeEnd) {
         const newOpacity = 1 - Math.min(Math.max((fadeEnd - rect.top) / (fadeEnd - fadeStart), 0), 1);
         setOpacity(newOpacity);
       }

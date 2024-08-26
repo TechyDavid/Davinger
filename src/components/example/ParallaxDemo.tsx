@@ -11,7 +11,12 @@ export const ParallaxDemo = () => {
     if (parallaxRef.current) {
       const rect = parallaxRef.current.getBoundingClientRect();
       const scrollY = window.scrollY;
-      setOffsetY(rect.top * -0.2); // Adjust this value to control the parallax speed
+
+      if (scrollY === 0) {
+        setOffsetY(0); // Reset the parallax effect when at the top of the page
+      } else {
+        setOffsetY(rect.top * -0.2); // Adjust this value to control the parallax speed
+      }
     }
   };
 
