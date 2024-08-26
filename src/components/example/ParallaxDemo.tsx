@@ -22,7 +22,7 @@ export const ParallaxDemo = () => {
   return (
     <div
       ref={parallaxRef}
-      className="relative w-full h-[75vh] md:h-[90vh] lg:h-[100vh] overflow-hidden"
+      className="relative w-30 h-[75vh] md:h-[90vh] lg:h-[100vh] overflow-hidden"
       style={{
         transform: `translateY(${offsetY}px)`,
         transition: 'transform 0.1s ease-out', // Smooth out the effect
