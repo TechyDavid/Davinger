@@ -36,7 +36,7 @@ export const ParallaxDemo = () => {
         }}
       >
         <Image
-          src="/images/rufus012.jpg" // Replace with your image path
+          src="/images/David.png" // Replace with your image path
           alt="Parallax Background"
           layout="fill"
           objectFit="cover"
