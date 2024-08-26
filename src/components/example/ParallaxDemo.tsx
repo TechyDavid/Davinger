@@ -26,7 +26,7 @@ export const ParallaxDemo = () => {
       className="relative rounded-3xl w-6/12 h-[55vh] md:h-[90vh] lg:h-[100vh] overflow-hidden"
       style={{
         transform: `translateY(${offsetY}px)`,
-        transition: 'transform 0.1s ease-out', // Smooth out the effect
+        transition: 'transform 0.5s ease-out', // Smooth out the effect
       }}
     >
       <Image
@@ -38,7 +38,7 @@ export const ParallaxDemo = () => {
         className="absolute inset-0 w-28 h-28 "
       />
       <div className="absolute inset-0 flex justify-center items-center">
-        <h1 className="text-5xl font-bold text-white">Davigner</h1>
+        <h1 className="font-monument text-5xl font-bold text-white">Davigner</h1>
       </div>
     </div>
     </div>
