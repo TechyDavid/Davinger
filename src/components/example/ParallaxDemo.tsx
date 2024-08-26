@@ -20,9 +20,10 @@ export const ParallaxDemo = () => {
   }, []);
 
   return (
+    <div className='w-full h-full flex flex-col justify-center items-center'>
     <div
       ref={parallaxRef}
-      className="relative w-30 h-[75vh] md:h-[90vh] lg:h-[100vh] overflow-hidden"
+      className="relative rounded-3xl w-6/12 h-[55vh] md:h-[90vh] lg:h-[100vh] overflow-hidden"
       style={{
         transform: `translateY(${offsetY}px)`,
         transition: 'transform 0.1s ease-out', // Smooth out the effect
@@ -34,11 +35,12 @@ export const ParallaxDemo = () => {
         layout="fill"
         objectFit="cover"
         priority
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-28 h-28 "
       />
       <div className="absolute inset-0 flex justify-center items-center">
-        <h1 className="text-5xl font-bold text-white">Parallax Effect</h1>
+        <h1 className="text-5xl font-bold text-white">Davigner</h1>
       </div>
+    </div>
     </div>
   );
 };
