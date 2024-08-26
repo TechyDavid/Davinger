@@ -15,7 +15,9 @@ export default function Home() {
        <RippleDemo/>
        <Ripple/>
        <FlipTextDemo/>
+       <br /><br /><br />
        <ParallaxDemo/>
+       <br /><br />
        <MarqueeDemo/>
       </div>
     </main>

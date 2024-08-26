@@ -10,6 +10,7 @@ export const ParallaxDemo = () => {
   const handleScroll = () => {
     if (parallaxRef.current) {
       const rect = parallaxRef.current.getBoundingClientRect();
+      const scrollY = window.scrollY;
       setOffsetY(rect.top * -0.2); // Adjust this value to control the parallax speed
     }
   };
@@ -21,26 +22,26 @@ export const ParallaxDemo = () => {
 
   return (
     <div className='w-full h-full flex flex-col justify-center items-center'>
-    <div
-      ref={parallaxRef}
-      className="relative rounded-3xl w-2/5 h-[35vh] md:h-[90vh] lg:h-[100vh] overflow-hidden"
-      style={{
-        transform: `translateY(${offsetY}px)`,
-        transition: 'transform 0.5s ease-out', // Smooth out the effect
-      }}
-    >
-      <Image
-        src="/images/rufus012.jpg" // Replace with your image path
-        alt="Parallax Background"
-        layout="fill"
-        objectFit="cover"
-        priority
-        className="absolute inset-0 w-28 h-28 "
-      />
-      <div className="absolute inset-0 flex justify-center items-center">
-        <h1 className="font-monument text-5xl font-bold text-white">Davigner</h1>
+      <div
+        ref={parallaxRef}
+        className="relative rounded-3xl w-6/12 h-[55vh] md:h-[90vh] lg:h-[100vh] overflow-hidden"
+        style={{
+          transform: `translateY(${offsetY}px)`,
+          transition: 'transform 0.4s ease-out', // Smooth out the effect
+        }}
+      >
+        <Image
+          src="/images/rufus012.jpg" // Replace with your image path
+          alt="Parallax Background"
+          layout="fill"
+          objectFit="cover"
+          priority
+          className="absolute inset-0"
+        />
+        <div className="absolute inset-0 flex justify-center items-center">
+          <h1 className="font-monument text-5xl font-bold text-white">Davigner</h1>
+        </div>
       </div>
-    </div>
     </div>
   );
 };
