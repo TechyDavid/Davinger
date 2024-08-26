@@ -42,4 +42,3 @@ export const ParallaxDemo = () => {
     </div>
   );
 };
-
