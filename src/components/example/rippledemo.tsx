@@ -19,10 +19,10 @@ export function RippleDemo() {
           </ul>
           <ul>
             <li>
-            <Button>
+            <Button variant="outline">
                 <a
                   href="mailto:drufus015@gmail.com"
-                  className=""
+                  className="text-white"
                 >
                   drufus015@gmail.com
                 </a>
