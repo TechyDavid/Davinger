@@ -1,6 +1,7 @@
 import Ripple from "@/components/magicui/ripple";
 import classes from '@/components/example/rippledemo.module.css'
 import ShimmerButton from "../magicui/shimmer-button";
+import { Button } from "../ui/button";
 import LogoSection from "./logo";
  
 export function RippleDemo() {
@@ -18,14 +19,14 @@ export function RippleDemo() {
           </ul>
           <ul>
             <li>
-            <ShimmerButton>
+            <Button>
                 <a
                   href="mailto:drufus015@gmail.com"
                   className=""
                 >
                   drufus015@gmail.com
                 </a>
-              </ShimmerButton>
+              </Button>
             </li>
           </ul>
      </div>
