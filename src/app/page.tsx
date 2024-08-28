@@ -7,7 +7,6 @@ import Ripple from '@/components/magicui/ripple';
 import { ParallaxDemo } from '@/components/example/ParallaxDemo';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
-
 export default function Home() {
   return (
     <ParallaxProvider>
