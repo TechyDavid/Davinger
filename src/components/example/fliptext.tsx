@@ -31,7 +31,7 @@ export const FlipTextDemo = () => {
   return (
     <div
       ref={textRef}
-      className="text-4xl tracking-[-0.1em] text-black md:text-7xl md:leading-[5rem] font-monument"
+      className="text-4xl tracking-[-0.1em] text-slate-900  md:text-7xl md:leading-[5rem] font-monument"
       style={{
         opacity: opacity, // Apply dynamic opacity
         transition: 'opacity 0.3s ease-out, transform 0.3s ease-out', // Smooth transition for opacity and transform
@@ -41,7 +41,7 @@ export const FlipTextDemo = () => {
       <FlipText className="text-8xl" word="FRONTEND" />
       <FlipText className="text-9xl" word="EXPERT®" />
       <div className="flex justify-around w-full">
-        <p className="w-56 text-xl font-sans tracking-[0em] text-left">
+        <p className="text-slate-900  w-56 text-xl font-sans tracking-[0em] text-left">
           Code the Future, One Line at a Time
         </p>
         <p className="w-56 text-xl font-sans tracking-[0em] text-left">

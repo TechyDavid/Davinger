@@ -2,21 +2,18 @@ import Ripple from "@/components/magicui/ripple";
 import classes from '@/components/example/rippledemo.module.css'
 import { Button } from "../ui/button";
 import LogoSection from "./logo";
+import { ModeToggle } from "./Modetoggle";
  
 export function RippleDemo() {
   return (
-    <div className="flex justify-evenly h-full w-full flex-col bg-slate-200 overflow-hidden"> 
-     <div className="z-20 flex justify-evenly h-[250px] my-8 left-0  w-full">
+    <div className="flex  h-auto w-full flex-col overflow-hidden bg-none"> 
+     <div className="z-20 flex justify-around h-[250px] my-8 left-0  w-full">
           <ul>
             <li className="w-full sm:w-20">
               <LogoSection/>
             </li>
           </ul>
-          <ul className={classes.omo}>
-            <li className="md:text-xl sm:text-sm"><a href="">About</a></li>
-            <li className="md:text-xl sm:text-sm"><a href="">Portfolio</a></li>
-          </ul>
-          <ul>
+          <ul className="flex">
             <li>
             <Button className="text-sm" variant="outline">
                 <a
@@ -26,6 +23,9 @@ export function RippleDemo() {
                   drufus015@gmail.com
                 </a>
               </Button>
+            </li>
+            <li>
+              <ModeToggle/>
             </li>
           </ul>
      </div>
