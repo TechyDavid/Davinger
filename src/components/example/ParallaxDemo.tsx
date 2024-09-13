@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import NumberTicker from "@/components/magicui/number-ticker";
 
 export const ParallaxDemo = () => {
   const [offsetY, setOffsetY] = useState(0);
@@ -47,10 +48,9 @@ export const ParallaxDemo = () => {
           <h1 className="font-monument text-5xl font-bold text-white">Davigner</h1>
         </div>
       </div>
-      <div className="absolute w-60 h-60 bg-black my-8 rounded-full">
-          
-
-          </div>
+      <div className="absolute w-60 h-60 bg-black mx-32 rounded-full text-black dark:text-white text-2xl">
+        <NumberTicker value={100} />
+      </div>
     </div>
   );
 };
