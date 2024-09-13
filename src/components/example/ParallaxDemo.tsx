@@ -26,7 +26,7 @@ export const ParallaxDemo = () => {
   }, []);
 
   return (
-    <div className='w-full h-full flex flex-col justify-center items-center'>
+    <div className='w-full h-full flex flex-col justify-center items-center relative'>
       <div
         ref={parallaxRef}
         className="relative rounded-3xl w-4/12 h-[35vh] md:h-[80vh] lg:h-[80vh] overflow-hidden"
@@ -47,6 +47,10 @@ export const ParallaxDemo = () => {
           <h1 className="font-monument text-5xl font-bold text-white">Davigner</h1>
         </div>
       </div>
+      <div className="absolute w-60 h-60 bg-black my-8 rounded-full">
+          
+
+          </div>
     </div>
   );
 };
