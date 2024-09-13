@@ -9,7 +9,7 @@ export function RippleDemo() {
     <div className="flex justify-evenly h-full w-full flex-col bg-slate-200 overflow-hidden"> 
      <div className="z-20 flex justify-evenly h-[250px] my-8 left-0  w-full">
           <ul>
-            <li className="w-full sm:w-32">
+            <li className="w-full sm:w-20">
               <LogoSection/>
             </li>
           </ul>

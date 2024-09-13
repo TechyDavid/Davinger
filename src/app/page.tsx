@@ -2,10 +2,10 @@
 
 import { RippleDemo } from '@/components/example/rippledemo';
 import { FlipTextDemo } from '@/components/example/fliptext';
-import {MarqueeDemo} from '@/components/example/marquee';
 import Ripple from '@/components/magicui/ripple';
 import { ParallaxDemo } from '@/components/example/ParallaxDemo';
 import { ParallaxProvider } from 'react-scroll-parallax';
+
 
 export default function Home() {
   return (
@@ -17,8 +17,6 @@ export default function Home() {
        <FlipTextDemo/>
        <br /><br /><br />
        <ParallaxDemo/>
-       <br /><br />
-       <MarqueeDemo/>
       </div>
     </main>
     </ParallaxProvider>
