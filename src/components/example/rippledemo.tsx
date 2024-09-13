@@ -9,20 +9,20 @@ export function RippleDemo() {
     <div className="flex justify-evenly h-full w-full flex-col bg-slate-200 overflow-hidden"> 
      <div className="z-20 flex justify-evenly h-[250px] my-8 left-0  w-full">
           <ul>
-            <li className="text-2xl">
+            <li className="w-full sm:w-32">
               <LogoSection/>
             </li>
           </ul>
           <ul className={classes.omo}>
-            <li><a href="">About</a></li>
-            <li><a href="">Portfolio</a></li>
+            <li className="md:text-xl sm:text-sm"><a href="">About</a></li>
+            <li className="md:text-xl sm:text-sm"><a href="">Portfolio</a></li>
           </ul>
           <ul>
             <li>
-            <Button variant="outline">
+            <Button className="text-sm" variant="outline">
                 <a
                   href="mailto:drufus015@gmail.com"
-                  className="text-white"
+                  className="text-white sm:text-sm"
                 >
                   drufus015@gmail.com
                 </a>

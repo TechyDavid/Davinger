@@ -1,8 +1,7 @@
 .omo{
-    font-size: x-large;
     display: flex;
     font-family: Monument;
 }
 .omo li{
-    width: 150px;
+    width: 100px;
 }
