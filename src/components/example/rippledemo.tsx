@@ -18,7 +18,7 @@ export function RippleDemo() {
             <Button className="text-sm" variant="outline">
                 <a
                   href="mailto:drufus015@gmail.com"
-                  className="text-white sm:text-sm"
+                  className="text-black dark:text-white sm:text-sm"
                 >
                   drufus015@gmail.com
                 </a>
