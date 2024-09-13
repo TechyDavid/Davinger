@@ -1,6 +1,5 @@
 import Ripple from "@/components/magicui/ripple";
 import classes from '@/components/example/rippledemo.module.css'
-import ShimmerButton from "../magicui/shimmer-button";
 import { Button } from "../ui/button";
 import LogoSection from "./logo";
  
