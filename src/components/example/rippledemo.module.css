@@ -1,6 +1,7 @@
 .omo{
     display: flex;
     font-family: Monument;
+    animation: animate-ripple;
 }
 .omo li{
     width: 100px;
