@@ -38,8 +38,8 @@ export const FlipTextDemo = () => {
       }}
     >
       <FlipText word="Elite" />
-      <FlipText className="text-8xl" word="FRONTEND" />
-      <FlipText className="text-9xl" word="EXPERT®" />
+      <FlipText className="xl:text-8xl md:text-7xl sm:text-4xl" word="FRONTEND" />
+      <FlipText className="xl:text-9xl md:text-8xl sm:text-5xl" word="EXPERT®" />
       <div className="flex justify-around w-full">
         <p className="w-56 text-xl font-sans tracking-[0em] text-left">
           Code the Future, One Line at a Time
