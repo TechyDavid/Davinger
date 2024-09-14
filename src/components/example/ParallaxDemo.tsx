@@ -49,7 +49,7 @@ export const ParallaxDemo = () => {
         </div>
       </div>
       <div className="absolute flex flex-col justify-center items-center left-10 top-10 w-60 h-60 border-4 border-black mx-32 rounded-full text-black dark:text-white text-2xl">
-        <NumberTicker value={200} className='' />
+        <NumberTicker value={200} className='flex'/>
         <h6 className='text-sm'>Github contributions</h6>
       </div>
     </div>
