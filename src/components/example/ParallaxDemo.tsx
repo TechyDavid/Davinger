@@ -31,7 +31,7 @@ export const ParallaxDemo = () => {
       {/* Parallax Section */}
       <div
         ref={parallaxRef}
-        className="relative rounded-3xl xl:w-[40%] lg:w-[65%] lg:h-[90vh] md:w-[60%] md:h-[80vh] sm:w-[70%] sm:h-[60vh] w-[90%] h-[50vh]"
+        className="relative rounded-3xl xl:w-[40%] lg:w-[65%] lg:h-[90vh] md:w-[70%] md:h-[70vh] sm:w-[70%] sm:h-[60vh] w-[90%] h-[50vh]"
         style={{
           transform: `translateY(${offsetY}px)`,
           transition: 'transform 0.4s ease-out', // Smooth out the effect
