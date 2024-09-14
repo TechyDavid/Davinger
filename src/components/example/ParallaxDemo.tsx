@@ -27,10 +27,11 @@ export const ParallaxDemo = () => {
   }, []);
 
   return (
-    <div className='w-full h-full flex flex-col justify-center items-center relative md:flex sm:flex-col'>
+    <div className='w-full h-full flex flex-col justify-center items-center relative'>
+      {/* Parallax Section */}
       <div
         ref={parallaxRef}
-        className="relative rounded-3xl lg:w-4/12 h-[90vh] md:w-[60%] md:h-[80vh] sm:w-[50%] sm:h-[60vh]"
+        className="relative rounded-3xl xl:w-[40%] lg:w-[65%] lg:h-[90vh] md:w-[60%] md:h-[80vh] sm:w-[70%] sm:h-[60vh] w-[90%] h-[50vh]"
         style={{
           transform: `translateY(${offsetY}px)`,
           transition: 'transform 0.4s ease-out', // Smooth out the effect
@@ -42,15 +43,16 @@ export const ParallaxDemo = () => {
           layout="fill"
           objectFit="cover"
           priority
-          className="absolute inset-0"
+          className="absolute inset-0 rounded-3xl"
         />
-        <div className="absolute inset-0 flex justify-center items-center">
-          <h1 className="font-monument text-5xl font-bold text-white">Davigner</h1>
-        </div>
       </div>
-      <div className="absolute flex flex-col justify-center items-center left-10 top-10 w-60 h-60 border-4 border-black dark:border-white mx-32 rounded-full text-black dark:text-white text-2xl">
-        <NumberTicker value={200} suffix='+'  className='flex'/>
-        <h6 className='text-sm font-monument'>Github contributions</h6>
+
+      {/* Ticker Section */}
+      <div className="absolute flex flex-col justify-center items-center left-5 md:left-10 top-5 md:top-10 w-32 h-32 md:w-60 md:h-60 border-4 border-black dark:border-white mx-8 md:mx-32 rounded-full text-black dark:text-white text-xl md:text-2xl">
+        <NumberTicker value={200} suffix='+' className='flex' />
+        <h6 className='text-xs md:text-sm font-monument text-center'>
+          Github contributions
+        </h6>
       </div>
     </div>
   );

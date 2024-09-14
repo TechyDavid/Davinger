@@ -37,14 +37,14 @@ export const FlipTextDemo = () => {
         transition: 'opacity 0.3s ease-out, transform 0.3s ease-out', // Smooth transition for opacity and transform
       }}
     >
-      <FlipText word="Elite" />
-      <FlipText className="xl:text-8xl md:text-7xl sm:text-4xl" word="FRONTEND" />
+      <FlipText className="xl:text-8xl md:text-7xl max-sm:text-5xl" word="Elite" />
+      <FlipText className="xl:text-8xl md:text-7xl max-sm:text-4xl" word="FRONTEND" />
       <FlipText className="xl:text-9xl md:text-8xl sm:text-5xl" word="EXPERT®" />
-      <div className="flex justify-around w-full">
-        <p className="w-56 text-xl font-sans tracking-[0em] text-left">
+      <div className="flex justify-around w-full  sm:text-sm">
+        <p className="w-56 text-xl max-sm:text-xs max-sm:text-center font-sans tracking-[0em] text-left">
           Code the Future, One Line at a Time
         </p>
-        <p className="w-56 text-xl font-sans tracking-[0em] text-left">
+        <p className="w-56 text-xl max-sm:text-xs max-sm:text-center font-sans tracking-[0em] text-left">
           Transforming Ideas into Interfaces, Step by Step
         </p>
       </div>
