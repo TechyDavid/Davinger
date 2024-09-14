@@ -15,7 +15,7 @@ export default function Home() {
         <FloatingNavDemo/>
        <RippleDemo/>
        <ParallaxProvider>
-       <Ripple/>
+       {/* <Ripple/> */}
        <FlipTextDemo/>
        <br /><br /><br />
        <ParallaxDemo/>

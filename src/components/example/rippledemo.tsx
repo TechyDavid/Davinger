@@ -29,9 +29,9 @@ export function RippleDemo() {
             </li>
           </ul>
      </div>
-      {/* <div className="whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black font-monument">
-        Ripple
-      </div> */}
+      <div className="whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black font-monument overflow-hidden">
+        <Ripple/>
+      </div>
     </div>
   );
 }
