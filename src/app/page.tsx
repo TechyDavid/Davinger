@@ -9,17 +9,19 @@ import { FloatingNavDemo } from '@/components/example/floatingnavbardemo';
 
 export default function Home() {
   return (
-    <ParallaxProvider>
+    
     <main >
       <div className='w-full h-full  bg-slate-200 dark:bg-black '>
         <FloatingNavDemo/>
        <RippleDemo/>
+       <ParallaxProvider>
        <Ripple/>
        <FlipTextDemo/>
        <br /><br /><br />
        <ParallaxDemo/>
+       </ParallaxProvider>
       </div>
     </main>
-    </ParallaxProvider>
+
   );
 }

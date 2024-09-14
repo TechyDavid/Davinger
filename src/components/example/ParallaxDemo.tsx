@@ -48,8 +48,9 @@ export const ParallaxDemo = () => {
           <h1 className="font-monument text-5xl font-bold text-white">Davigner</h1>
         </div>
       </div>
-      <div className="absolute w-60 h-60 bg-black mx-32 rounded-full text-black dark:text-white text-2xl">
-        <NumberTicker value={100} />
+      <div className="absolute flex flex-col justify-center items-center left-10 top-10 w-60 h-60 border-4 border-black mx-32 rounded-full text-black dark:text-white text-2xl">
+        <NumberTicker value={200} className='' />
+        <h6 className='text-sm'>Github contributions</h6>
       </div>
     </div>
   );
