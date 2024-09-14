@@ -10,9 +10,11 @@ export default function NumberTicker({
   direction = "up",
   delay = 0,
   className,
+  suffix = "", // added suffix prop
 }: {
   value: number;
   direction?: "up" | "down";
+  suffix?: string; // added suffix prop
   className?: string;
   delay?: number; // delay in s
 }) {
@@ -35,12 +37,12 @@ export default function NumberTicker({
     () =>
       springValue.on("change", (latest) => {
         if (ref.current) {
-          ref.current.textContent = Intl.NumberFormat("en-US").format(
+          ref.current.textContent = `${Intl.NumberFormat("en-US").format(
             Number(latest.toFixed(0)),
-          );
+          )} ${suffix}`; // added suffix to the text content
         }
       }),
-    [springValue],
+    [springValue, suffix], // added suffix to the dependency array
   );
 
   return (

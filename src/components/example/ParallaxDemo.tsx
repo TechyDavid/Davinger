@@ -27,10 +27,10 @@ export const ParallaxDemo = () => {
   }, []);
 
   return (
-    <div className='w-full h-full flex flex-col justify-center items-center relative'>
+    <div className='w-full h-full flex flex-col justify-center items-center relative md:flex sm:flex-col'>
       <div
         ref={parallaxRef}
-        className="relative rounded-3xl w-4/12 h-[35vh] md:h-[80vh] lg:h-[80vh] overflow-hidden"
+        className="relative rounded-3xl lg:w-4/12 h-[90vh] md:w-[60%] md:h-[80vh] sm:w-[50%] sm:h-[60vh]"
         style={{
           transform: `translateY(${offsetY}px)`,
           transition: 'transform 0.4s ease-out', // Smooth out the effect
@@ -49,7 +49,7 @@ export const ParallaxDemo = () => {
         </div>
       </div>
       <div className="absolute flex flex-col justify-center items-center left-10 top-10 w-60 h-60 border-4 border-black dark:border-white mx-32 rounded-full text-black dark:text-white text-2xl">
-        <NumberTicker value={200} className='flex'/>
+        <NumberTicker value={200} suffix='+'  className='flex'/>
         <h6 className='text-sm font-monument'>Github contributions</h6>
       </div>
     </div>
